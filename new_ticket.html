@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Work Order</title>
+    <meta name="author" content="Collin Maassen">
+    <meta name="description" content="AZ Lawn King New Work Order Page. Gathering information for a new service request.">
+</head>
+<body>
+    <header>
+        <h1>Arizona Lawn King</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new_ticket.html">New Work Order</a></li>
+                <li><a href="history.html">Service History</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>New Work Order</h2>
+        <fieldset>
+            <form action="submit_ticket.html" method="post">
+                <label for="ticketNumber">Number:</label><br>
+                <input type="text" id="ticketNumber" name="ticketNumber" required><br><br>
+
+                <label for="customerName">Name:</label><br>
+                <input type="text" id="customerName" name="customerName" required><br><br>
+
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address" required><br><br>
+
+                <label for="intakeDate">Date:</label><br>
+                <input type="date" id="intakeDate" name="intakeDate" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <input type="submit" value="Submit Work Order">
+            </fieldset><br><br>
+            <h2>WARRANTY WORK ONLY</h2>
+            <fieldset>
+                <label for="purchaseLocation">Purchased From:</label><br>
+                <input type="text" id="purchaseLocation" name="purchaseLocation"><br><br>
+                <label for="purchaseDate">Date:</label><br>
+                <input type="date" id="purchaseDate" name="purchaseDate"><br><br>
+
+                <label for="modelNumber">Model #:</label><br>
+                <input type="text" id="modelNumber" name="modelNumber"><br><br>
+
+                <label for="serialNumber">Serial #:</label><br>
+                <input type="text" id="serialNumber" name="serialNumber"><br><br>
+            </fieldset>
+            <fieldset>
+                <label for="workDescription">WORK TO BE PERFORMED:</label><br>
+                <textarea id="workDescription" name="workDescription" rows="4" cols="50" required></textarea><br><br>
+                <h3>THERE IS A MINIMUM ESTIMATE AND TEAR-DOWN CHARGE ON ANY UNIT NOT REPAIRED. RE-ASSEMBLY EXTRA</h3>
+            </fieldset>
+            <fieldset>
+                <h2>ESTIMATE ONLY</h2>
+                <label for="estimateParts">PARTS:</label><br>
+                <input type="text" id="estimateParts" name="estimateParts"><br><br>
+                <label for="estimateLabor">LABOR:</label><br>
+                <input type="text" id="estimateLabor" name="estimateLabor"><br><br>
+                <label for="estimateTotal">TOTAL:</label><br>
+                <input type="text" id="estimateTotal" name="estimateTotal"><br><br>
+
+                <h3>ESTIMATE CALLED</h3>
+
+                <label for="estimateCall">DATE:</label><br>
+                <input type="date" id="estimateCall" name="estimateCall"><br><br>
+
+                <label for="estimateCall2">2ND CALL</label><br>
+                <input type="date" id="estimateCall2" name="estimateCall2"><br><br>
+
+                <label for="approvedGo">GO:</label>
+                <input type="checkbox" id="approvedGo" name="approvedGo" value="yes"><br><br>
+
+                <label for="deniedGo">DON'T GO</label><br>
+                <input type="checkbox" id="deniedGo" name="deniedGo" value="yes"><br><br>
+            </fieldset>
+            <fieldset>
+                <table>
+                    <tr>
+                        <th>CALLED FOR PICKUP</th>
+                        <th>N/A</th>
+                        <th>MESSAGE</th>
+                    </tr>
+                    <tr>
+                        <td><input type="date" name="date1">1. </td>
+                        <td><input type="date" name="date1"></td>
+                        <td><input type="time" name="timeIn1"></td>
+                        <td><input type="time" name="timeOut1"></td>
+                        <td><input type="text" name="hours1"></td>
+                        <td><input type="text" name="initials1"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="technician2"></td>
+                        <td><input type="date" name="date2"></td>
+                        <td><input type="time" name="timeIn2"></td>
+                        <td><input type="time" name="timeOut2"></td>
+                        <td><input type="text" name="hours2"></td>
+                        <td><input type="text" name="initials2"></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+
+        </form>
+
+    </main>
+    <footer>      
+        <p>© <span id="currentyear"></span>Arizona Lawn King EST. 1962 Phoenix, Arizona USA</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
